@@ -1,0 +1,170 @@
+The following long integer will be read into List 1: 954680325257568512973371196238845129776544789465
+
+The following long integer will be read into List 2: 64324564257936835497210698463523456234
+
+List 1:
+
+  954 68032 52575 68512 97337 11962 38845 12977 65447 89465 
+
+List 2:
+
+    0 00000 00643 24564 25793 68354 97210 69846 35234 56234 
+
+Starting from the end of the linked lists and traversing right to left:
+
+-----------------------------------------------------------------------
+
+Reading (List 1, Link 1): 89465
+Reading (List 2, Link 1): 56234
+
+This is the first link, so carry = 0
+
+sum = (List 1, Link 1) + (List2, Link 1) + carry = 89465 + 56234 + 0 = 145699
+
+number = sum % 1000000 =  145699 % 100000 = 45699
+Placing 45699 in (List 3, Link 1)
+
+carry = sum / 100000 = 145699 / 100000 = 1
+Carrying 1 over to the next link
+
+-----------------------------------------------------------------------
+
+Reading (List 1, Link 2): 65447
+Reading (List 2, Link 2): 35234
+
+From the previous link, carry = 1
+
+sum = (List 1, Link 2) + (List2, Link 2) + carry = 65447 + 35234 + 1 = 100682
+
+number = sum % 1000000 =  100682 % 100000 = 682
+Placing 682 in (List 3, Link 2)
+
+carry = sum / 100000 = 100682 / 100000 = 1
+Carrying 1 over to the next link
+
+-----------------------------------------------------------------------
+
+Reading (List 1, Link 3): 12977
+Reading (List 2, Link 3): 69846
+
+From the previous link, carry = 1
+
+sum = (List 1, Link 3) + (List2, Link 3) + carry = 12977 + 69846 + 1 = 82824
+
+number = sum % 1000000 =  82824 % 100000 = 82824
+Placing 82824 in (List 3, Link 3)
+
+carry = sum / 100000 = 82824 / 100000 = 0
+Carrying 0 over to the next link
+
+-----------------------------------------------------------------------
+
+Reading (List 1, Link 4): 38845
+Reading (List 2, Link 4): 97210
+
+From the previous link, carry = 0
+
+sum = (List 1, Link 4) + (List2, Link 4) + carry = 38845 + 97210 + 0 = 136055
+
+number = sum % 1000000 =  136055 % 100000 = 36055
+Placing 36055 in (List 3, Link 4)
+
+carry = sum / 100000 = 136055 / 100000 = 1
+Carrying 1 over to the next link
+
+-----------------------------------------------------------------------
+
+Reading (List 1, Link 5): 11962
+Reading (List 2, Link 5): 68354
+
+From the previous link, carry = 1
+
+sum = (List 1, Link 5) + (List2, Link 5) + carry = 11962 + 68354 + 1 = 80317
+
+number = sum % 1000000 =  80317 % 100000 = 80317
+Placing 80317 in (List 3, Link 5)
+
+carry = sum / 100000 = 80317 / 100000 = 0
+Carrying 0 over to the next link
+
+-----------------------------------------------------------------------
+
+Reading (List 1, Link 6): 97337
+Reading (List 2, Link 6): 25793
+
+From the previous link, carry = 0
+
+sum = (List 1, Link 6) + (List2, Link 6) + carry = 97337 + 25793 + 0 = 123130
+
+number = sum % 1000000 =  123130 % 100000 = 23130
+Placing 23130 in (List 3, Link 6)
+
+carry = sum / 100000 = 123130 / 100000 = 1
+Carrying 1 over to the next link
+
+-----------------------------------------------------------------------
+
+Reading (List 1, Link 7): 68512
+Reading (List 2, Link 7): 24564
+
+From the previous link, carry = 1
+
+sum = (List 1, Link 7) + (List2, Link 7) + carry = 68512 + 24564 + 1 = 93077
+
+number = sum % 1000000 =  93077 % 100000 = 93077
+Placing 93077 in (List 3, Link 7)
+
+carry = sum / 100000 = 93077 / 100000 = 0
+Carrying 0 over to the next link
+
+-----------------------------------------------------------------------
+
+Reading (List 1, Link 8): 52575
+Reading (List 2, Link 8): 643
+
+From the previous link, carry = 0
+
+sum = (List 1, Link 8) + (List2, Link 8) + carry = 52575 + 643 + 0 = 53218
+
+number = sum % 1000000 =  53218 % 100000 = 53218
+Placing 53218 in (List 3, Link 8)
+
+carry = sum / 100000 = 53218 / 100000 = 0
+Carrying 0 over to the next link
+
+-----------------------------------------------------------------------
+
+Reading (List 1, Link 9): 68032
+Reading (List 2, Link 9): 0
+
+From the previous link, carry = 0
+
+sum = (List 1, Link 9) + (List2, Link 9) + carry = 68032 + 0 + 0 = 68032
+
+number = sum % 1000000 =  68032 % 100000 = 68032
+Placing 68032 in (List 3, Link 9)
+
+carry = sum / 100000 = 68032 / 100000 = 0
+Carrying 0 over to the next link
+
+-----------------------------------------------------------------------
+
+Reading (List 1, Link 10): 954
+Reading (List 2, Link 10): 0
+
+From the previous link, carry = 0
+
+sum = (List 1, Link 10) + (List2, Link 10) + carry = 954 + 0 + 0 = 954
+
+number = sum % 1000000 =  954 % 100000 = 954
+Placing 954 in (List 3, Link 10)
+
+carry = sum / 100000 = 954 / 100000 = 0
+Carrying 0 over to the next link
+
+-----------------------------------------------------------------------
+
+Here is the result list - List 3:
+
+  954 68032 53218 93077 23130 80317 36055 82824 00682 45699 
+
